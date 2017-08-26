@@ -55,7 +55,8 @@ function wikiSearch(q) {
         })
 }
 
-$("#btn-submit").click(function() {
-    let s = $("#my-search").val()
-    wikiSearch(s)
-})
+document.onkeypress = function (e) {
+    if (e.keyCode == 13) {
+        wikiSearch($("#my-search").val())
+    }
+}

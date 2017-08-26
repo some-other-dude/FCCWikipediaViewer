@@ -12,7 +12,6 @@ body {
     border-radius: 40px;
     background-color: RGBA(11, 43, 63, 1.00);
     color: lightgray;
-    width: 300px;
 }
 
 
@@ -29,10 +28,11 @@ body {
     border-left: 6px solid RGBA(215, 111, 58, 1.00);
 }
 
-.hiddenURL {
-    display: none;
-}
 
 .results h4 {
     font-weight: normal;
+}
+
+.input-closed {
+    width: 40px;
 }

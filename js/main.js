@@ -26,10 +26,7 @@ function writeResultsContainerToDOM(p) {
 
 function goToWikipedia(pageid) {
     let url = `http://en.wikipedia.org/?curid=${pageid}`
-
     window.open(url, '_blank', 'location=yes,height=900,width=1600,scrollbars=yes,status=yes')
-
-
 }
 
 function wikiSearch(q) {
@@ -60,3 +57,17 @@ document.onkeypress = function (e) {
         wikiSearch($("#my-search").val())
     }
 }
+
+$("#my-search").click(function () {
+    let f = $("#my-search")
+    console.log(f.css("width"));
+    if (f.css("width") == "40px") {
+        //do open
+        f.animate({
+            width: "300px"}, 1000)
+    } else {
+        //do close
+        f.animate({
+            width: "40px"}, 1000)
+    }
+})

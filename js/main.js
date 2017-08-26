@@ -54,13 +54,17 @@ function wikiSearch(q) {
 
 document.onkeypress = function (e) {
     if (e.keyCode == 13) {
-        wikiSearch($("#my-search").val())
+
+        $(".search-form").animate({
+            paddingTop: "30px"
+        },1000)
+
+        window.setTimeout(function () {wikiSearch($("#my-search").val())},1000)
     }
 }
 
 $("#my-search").click(function () {
     let f = $("#my-search")
-    console.log(f.css("width"));
     if (f.css("width") == "40px") {
         //do open
         f.animate({

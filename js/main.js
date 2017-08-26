@@ -25,7 +25,7 @@ function writeResultsContainerToDOM(p) {
 
     $(".results").animate({
         opacity: 1
-    }, 250)
+    }, 400)
 }
 
 function goToWikipedia(pageid) {
@@ -77,5 +77,6 @@ $("#my-search").click(function () {
         //do close
         f.animate({
             width: "40px"}, 1000)
+            f.val("")
     }
 })

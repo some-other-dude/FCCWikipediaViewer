@@ -22,6 +22,10 @@ function writeResultsContainerToDOM(p) {
     document.querySelector(`#page-${p.pageid}`).addEventListener('click', function(event) {
         goToWikipedia(p.pageid)
     });
+
+    $(".results").animate({
+        opacity: 1
+    }, 250)
 }
 
 function goToWikipedia(pageid) {

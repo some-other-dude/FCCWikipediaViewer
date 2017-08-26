@@ -7,3 +7,59 @@
     color: RGBA(240, 240, 240, 1);
     padding-top: 30px;
 }*/
+
+
+body {
+    background-color: RGB(70, 78, 90);
+}
+
+.morphing-input {
+    padding-top: 100px;
+}
+
+#fld-search {
+    /*
+    height: 40px;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 500px;
+    border-color: RGBA(254, 100, 80, 1.00);
+    background-color:RGB(70, 78, 90);*/
+}
+
+div.line1 {
+    transform: rotateZ(45deg);
+    height: 5px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: RGBA(254, 100, 80, 1.00);
+}
+
+div.line2 {
+    transform: rotateZ(-45deg);
+    height: 5px;
+    width: 25px;
+    border-radius: 5px;
+    background-color: RGBA(254, 100, 80, 1.00);
+}
+
+#mySearch {
+/*display: none;*/
+    color: lightgrey;
+    padding: 2px;
+    height: 40px;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 500px;
+    border-color: RGBA(254, 100, 80, 1.00);
+    background-color:RGB(70, 78, 90);
+    font-size: 20px;
+}
+
+.my-search-open {
+    width: 400px;
+}
+
+.my-search-closed {
+    width: 40px;
+}

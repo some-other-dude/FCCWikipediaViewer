@@ -13,6 +13,8 @@ body {
     background-color: RGBA(11, 43, 63, 1.00);
     color: lightgray;
     height: 40px;
+    margin-left: auto;
+    margin-right:auto;
 }
 
 

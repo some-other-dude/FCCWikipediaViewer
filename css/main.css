@@ -8,14 +8,14 @@ body {
     margin: 10px;
 }
 
-.instruction-link {color: white;}
-.instruction-link:visted {color: white;}
-.instruction-link:active {color: white;}
-.instruction-link:default {color: white;}
-.instruction-link:hover {
+#random-article {color: white;}
+#random-article-link:default {color: white;}
+#random-article-link:active {color: white;}
+#random-article-link:visited {color: white;}
+#random-article-link:hover {
     color: white;
-    font-weight: bold;;
-    text-decoration: none
+    font-weight: bold;
+    text-decoration: none;
 }
 
 

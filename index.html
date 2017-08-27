@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Wikipedia Viewer</title>
+    <script src="https://use.fontawesome.com/a70d4083af.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/main.css" type="text/css">
@@ -13,19 +14,31 @@
 <body>
 
     <div class="container" id="mainContainer">
+        <div class="search-mover">
+            <div class="row justify-content-center instructions">
+                Click the circle to search
+            </div>
+            <div class="row justify-content-center search-form">
+                <div class="col-sm-8">
+                    <div>
+                        <input type="search" class="form-control spyglass" name="mySearch" id="my-search" value="">
+                    </div>
+                </div>
+                <!-- div col -->
+            </div>
+            <!-- div row -->
+            <div class="row justify-content-center instructions">
+                <a href="" target="_blank" class="instruction-link">Click here for a random WikiPedia article</a>
+            </div>
+        </div>
+        <!-- search-mover -->
 
-        <div class="row justify-content-center search-form">
-            <div class="col-sm-8">
-                <input type="search" class="form-control" name="mySearch" id="my-search" value="">
-            </div><!-- div col -->
-        </div> <!-- div row -->
 
 
 
 
-
-
-    </div><!-- div container -->
+    </div>
+    <!-- div container -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>

@@ -59,11 +59,11 @@ function wikiSearch(q) {
 document.onkeypress = function (e) {
     if (e.keyCode == 13) {
 
-        $(".search-form").animate({
+        $(".search-mover").animate({
             paddingTop: "30px"
-        },1000)
+        },800)
 
-        window.setTimeout(function () {wikiSearch($("#my-search").val())},1000)
+        window.setTimeout(function () {wikiSearch($("#my-search").val())},800)
     }
 }
 
@@ -79,4 +79,10 @@ $("#my-search").click(function () {
             width: "40px"}, 1000)
             f.val("")
     }
+})
+
+$( window ).on( "load", function() {
+    $(".search-mover").animate({
+        opacity: 1
+    }, 400)
 })

@@ -1,11 +1,16 @@
 body {
     background-color: RGBA(11, 43, 63, 1.00);
-
 }
 
 .instructions {
     color: white;
     margin: 10px;
+}
+
+.instr-top-reset:hover {
+    font-weight: bold;
+    font-size: 6;
+    cursor: pointer;
 }
 
 #random-article {color: white;}

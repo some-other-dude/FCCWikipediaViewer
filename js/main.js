@@ -60,6 +60,7 @@ document.onkeypress = function(e) {
             paddingTop: "30px"
         }, 800)
         $("#instr-top").text("Reset")
+        $("#instr-top").toggleClass("instr-top-reset")
         $("#instr-top").click(function functionName() {
             resetForm()
         })
